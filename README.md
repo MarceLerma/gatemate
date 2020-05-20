@@ -40,7 +40,7 @@ Las vistas del desarrollo lucen de la siguiente manera:
 
 • Vista inicio 
 
-<img src="/Recursos/InvUsuario/vistaInicio.PNG">
+
 
 • Vista evento
 
