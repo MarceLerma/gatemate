@@ -1,4 +1,4 @@
-# gatemate
+# gateMate
 
 ¿Qué es gateMate?
 getMate busca conectar a las personas de una manera orgánica, es decir, mediante gustos/pasatiempos en común,
