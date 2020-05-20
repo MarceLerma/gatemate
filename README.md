@@ -44,7 +44,7 @@ Las vistas del desarrollo lucen de la siguiente manera:
 
 • <strong>Vista evento</strong>
 
-<img src="/Recursos/InvUsuario/vistaEvento2.PNG">
+<img src="/Recursos/InvUsuario/vistaEvento2.png">
 
 • <strong>Vista perfil usuario</strong>
 
