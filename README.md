@@ -23,30 +23,30 @@ Buscan nuevas amistades para salir/ sus amigas tienen otras prioridades/ son nue
 quieren ampliar su círculo social / no tienen con quien salir / buscan personas con sus gustos
 Viven en ciudades grandes 
 
-• Mapa de empatía
+• <strong>Mapa de empatía</strong>
 
 <img src="/Recursos/InvUsuario/mapaEmpatia.PNG">
 
-• Protopersona
+• <strong>Protopersona</strong>
 
 <img src="/Recursos/InvUsuario/protoPersona.PNG">
 
-• Personas, escenarios, historias de usuario
+• <strong>Personas, escenarios, historias de usuario</strong>
 
 <img src="/Recursos/InvUsuario/personasEscenariosHistoriausuario.PNG">
 
 
 Las vistas del desarrollo lucen de la siguiente manera:
 
-• Vista inicio 
+• <strong>Vista inicio </strong>
 
+<img src="/Recursos/InvUsuario/vistaInicio.png">
 
-
-• Vista evento
+• <strong>Vista evento</strong>
 
 <img src="/Recursos/InvUsuario/vistaEvento.PNG">
 
-• Vista perfil usuario
+• <strong>Vista perfil usuario</strong>
 
 <img src="/Recursos/InvUsuario/vistaPerfil.PNG">
 
