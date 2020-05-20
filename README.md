@@ -24,8 +24,6 @@ quieren ampliar su círculo social / no tienen con quien salir / buscan personas
 Viven en ciudades grandes 
 
 • Mapa de empatía
-![Alt text](/develop/Recursos/InvUsuaario/mapaEmpatia.png raw=true "Optional Title") 
 
-https://github.com/MarceLerma/gatemate/blob/develop/Recursos/InvUsuario/mapaEmpatia.PNG
-https://raw.githubusercontent.com/MarceLerma/gatemate/blob/develop/Recursos/InvUsuario/mapaEmpatia.PNG
+![]<develop/Recursos/InvUsuario/mapaEmpatia.png
 
