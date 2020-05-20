@@ -26,5 +26,5 @@ Viven en ciudades grandes
 • Mapa de empatía
 
 https://github.com/MarceLerma/gatemate/blob/develop/Recursos/InvUsuario/mapaEmpatia.PNG
-
+https://raw.githubusercontent.com/MarceLerma/gatemate/blob/develop/Recursos/InvUsuario/mapaEmpatia.PNG
 
