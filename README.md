@@ -1,4 +1,4 @@
-# gateMate
+# <strong> gateMate </strong>
 
 <strong> ¿Qué es gateMate? </strong>
 
@@ -8,12 +8,12 @@ esto se logra a través de la dinámica de la plataforma, en la cual puedes cont
 en ir a los mismos eventos que tu deseas ir, la plataforma te propondrá personas con las que puedes ser compatibles
 y tu decides si quieres iniciar una conversación para ir juntos al evento. 
 
-¿Qué necesidad busca resolver? 
+<strong> ¿Qué necesidad busca resolver? </strong>
 
 Que cuando una persona no tenga con quien ir a un evento (concierto, obra de teatro, exposición, ect.)  
 pueda contactar con una persona(s) afin para ir al evento.
 
-• Características usuarios
+•<strong> Características usuarios </strong>
 
 Principalmente mujeres (accesible también para hombres) 
 Entre 24 y 40 años 
