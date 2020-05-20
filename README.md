@@ -25,5 +25,5 @@ Viven en ciudades grandes
 
 • Mapa de empatía
 
-![mapaEmpatia](https://user-images.githubusercontent.com/60205489/82395330-ee83f100-9a10-11ea-8c56-25d992fb1847.PNG)
+![mapaEmpatia]<Recursos/InvUsuario/mapaEmpatia.png>
 
