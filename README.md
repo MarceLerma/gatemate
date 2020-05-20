@@ -25,8 +25,29 @@ Viven en ciudades grandes
 
 • Mapa de empatía
 
-![Mapa Empatia](Recursos/InvUsuario/mapaEmpatia.PNG)
-
 <img src="/Recursos/InvUsuario/mapaEmpatia.PNG">
 
-https://github.com/MarceLerma/gatemate/blob/master/Recursos/InvUsuario/mapaEmpatia.PNG
+• Protopersona
+
+<img src="/Recursos/InvUsuario/protoPersona.PNG">
+
+• Personas, escenarios, historias de usuario
+
+<img src="/Recursos/InvUsuario/personasEscenariosHistoriausuario.PNG">
+
+
+Las vistas del desarrollo lucen de la siguiente manera:
+
+• Vista inicio 
+
+<img src="/Recursos/InvUsuario/vistaInicio.PNG">
+
+• Vista evento
+
+<img src="/Recursos/InvUsuario/vistaEvento.PNG">
+
+• Vista perfil usuario
+
+<img src="/Recursos/InvUsuario/vistaPerfil.PNG">
+
+
