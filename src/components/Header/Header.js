@@ -10,7 +10,7 @@ function Header (){
     return (
     <header className="Header">
         <Logo />
-        <Search />
+        {/* <Search /> */}
         <Nav />
     </header>
 

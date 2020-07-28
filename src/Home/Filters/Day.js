@@ -2,38 +2,59 @@ import React from 'react';
 import '../estilos/_search.sass';
 
 
-class Day extends React.Component{
-    render() {
+export default function Categories({ dayHandler }) {
         return (
             <form action="">
-                <p className="subtituloSearchMain"> Día de la semana </p>
+                <p className="subtituloSearchMain"><strong> Día de la semana </strong></p>
                 <div className="optionsSearchMain">
                     <ul>
-                        <input type="checkbox" id="lunesDiaSemana" name="lunesDiaSemana"/>
+                        <input 
+                            type="checkbox" 
+                            onClick={e=> {
+                                dayHandler('lunes', e.target.checked)}}
+                            />
                         <label for="lunes"> Lunes</label> 
                     </ul>
                     <ul>
-                        <input type="checkbox" id="martesDiaSemana" name="martesDiaSemana"/>
+                        <input 
+                            type="checkbox"
+                            onClick={e=> {
+                                dayHandler('martes', e.target.checked)}}/>
                         <label for="martes"> Martes</label>
                     </ul>
                     <ul>
-                        <input type="checkbox" id="martesDiaSemana" name="martesDiaSemana"/>
+                        <input 
+                            type="checkbox" 
+                            onClick={e=> {
+                                dayHandler('miercoles', e.target.checked)}}/>
                         <label for="miercoles"> Miércoles</label> 
                     </ul>
                     <ul>
-                        <input type="checkbox" id="juevesDiaSemana" name="juevesDiaSemana"/>
+                        <input 
+                            type="checkbox" 
+                            onClick={e=> {
+                                dayHandler('jueves', e.target.checked)}}/>
                         <label for="jueves"> Jueves</label>
                     </ul>
                     <ul>
-                        <input type="checkbox" id="viernesDiaSemana" name="viernesDiaSemana"/>
+                        <input 
+                            type="checkbox" 
+                            onClick={e=> {
+                                dayHandler('viernes', e.target.checked)}}/>
                         <label for="viernes"> Viernes</label>
                     </ul>
                     <ul>
-                        <input type="checkbox" id="sabadoDiaSemana" name="sabadoDiaSemana"/>
+                        <input 
+                            type="checkbox" 
+                            onClick={e=> {
+                                dayHandler('sabado', e.target.checked)}}/>
                         <label for="sabado"> Sábado</label>
                     </ul>
                     <ul>
-                        <input type="checkbox" id="domingoDiaSemana" name="domingoDiaSemana"/>
+                        <input 
+                            type="checkbox" 
+                            onClick={e=> {
+                                dayHandler('domingo', e.target.checked)}}/>
                         <label for="domingo"> Domingo</label>
                     </ul>
                 </div>
@@ -41,6 +62,5 @@ class Day extends React.Component{
 
         )  
     }
-}
 
-export default Day 
+

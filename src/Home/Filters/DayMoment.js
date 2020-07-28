@@ -1,28 +1,35 @@
 import React from 'react';
 import '../estilos/_search.sass';
 
-class DayMoment extends React.Component{
-    render(){
+export default function Categories({ dayMomentHandler }) {
         return(
-            <form action="">
-                <p className="subtituloSearchMain">Momento del día</p>
+            <form >
+                <p className="subtituloSearchMain"><strong>Momento del día</strong></p>
                 <div className="optionsSearchMain">
                     <ul>
-                        <input type="checkbox" id="mañanaMomentoDia" name="mañanaMomentoDia"/>
+                        <input 
+                            type="checkbox" 
+                            onClick={e=> {
+                                dayMomentHandler('mañana', e.target.checked)}}/>
                         <label for="mañana"> Mañana</label>
                     </ul>
                     <ul>
-                        <input type="checkbox" id="tardeMomentoDia" name="tardeMomentoDia"/>
-                        <label for="tarde"> Tarde</label>
+                        <input 
+                            type="checkbox" 
+                            onClick={e=> {
+                                dayMomentHandler('tarde', e.target.checked)}}/>
+                        <label for="tarde"> Tarde </label>
                     </ul>
                     <ul>
-                        <input type="checkbox" id="nocheMomentoDia" name="nocheMomentoDia"/>
+                        <input 
+                            type="checkbox" 
+                            onClick={e=> {
+                                dayMomentHandler('noche', e.target.checked)}}/>
                         <label for="noche"> Noche</label>
                     </ul>
                 </div>
             </form>
         )
     }
-}
 
-export default DayMoment
+
