@@ -47,6 +47,6 @@ Las vistas principales del desarrollo lucen de la siguiente manera:
 
 • <strong>Vista perfil usuario</strong>
 
-<img src="/Recursos/InvUsuario/vistaPerfil.PNG">
+<img src="/Recursos/InvUsuario/vistaPerfil.png">
 
 
