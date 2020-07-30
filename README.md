@@ -1,68 +1,50 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# <strong> gateMate </strong>
 
-## Available Scripts
+<strong> ¿Qué es gateMate? </strong>
 
-In the project directory, you can run:
+getMate busca conectar a las personas de una manera orgánica, es decir, mediante gustos/pasatiempos en común,
+de forma que se tengan temas afines en donde las actividades a realizar en conjunto serán el medio de conexión,
+esto se logra a través de la dinámica de la plataforma, en la cual puedes contactar con personas interesadas 
+en ir a los mismos eventos que tu deseas ir, la plataforma te propondrá personas con las que puedes ser compatibles
+y tu decides si quieres iniciar una conversación para ir juntos al evento. 
 
-### `npm start`
+<strong> ¿Qué necesidad busca resolver? </strong>
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+A contactarte con personas con las que seas a fin para ir juntos a un evento (concierto, obra de teatro, exposición, ect.) de forma que la experiencia del evento sea mas enriquecedora al compartirla con alguien, reducir el estres que genra ir solo a un evento (desconocer el lugar, sentirte vulnerable, etc.)
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+•<strong> Características usuarios </strong>
 
-### `npm test`
+Principalmente mujeres (accesible también para hombres) 
+Entre 24 y 40 años 
+Solteras, mamas solteras, con novio, divorciadas 
+Foráneas, extranjeras y locales
+Buscan nuevas amistades para salir/ sus amigas tienen otras prioridades/ son nuevas en la ciudad y no conocen a nadie /
+quieren ampliar su círculo social / no tienen con quien salir / buscan personas con sus gustos
+Viven en ciudades grandes 
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+• <strong>Mapa de empatía</strong>
 
-### `npm run build`
+<img src="/Recursos/InvUsuario/mapaEmpatia.PNG">
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+• <strong>Protopersona</strong>
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+<img src="/Recursos/InvUsuario/protoPersona.PNG">
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+• <strong>Personas, escenarios, historias de usuario</strong>
 
-### `npm run eject`
+<img src="/Recursos/InvUsuario/personasEscenariosHistoriausuario.PNG">
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Las vistas principales del desarrollo lucen de la siguiente manera:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+• <strong>Vista inicio </strong>
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+<img src="/Recursos/InvUsuario/vistaInicio.png">
 
-## Learn More
+• <strong>Vista evento</strong>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<img src="/Recursos/InvUsuario/vistaEvento2.png">
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+• <strong>Vista perfil usuario</strong>
 
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+<img src="/Recursos/InvUsuario/vistaPerfil.png">
