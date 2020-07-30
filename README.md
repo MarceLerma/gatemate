@@ -24,7 +24,7 @@ Viven en ciudades grandes
 
 • <strong>Mapa de empatía</strong>
 
-<img src="assets/InvUsuario/mapaEmpatia.PNG">
+<img src="src/assets/InvUsuario/mapaEmpatia.PNG">
 
 • <strong>Protopersona</strong>
 
