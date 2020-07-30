@@ -10,7 +10,7 @@ y tu decides si quieres iniciar una conversación para ir juntos al evento.
 
 <strong> ¿Qué necesidad busca resolver? </strong>
 
-Ayudar a encontrar personas con las que seas a fin para ir juntos a un evento (concierto, obra de teatro, exposición, ect.) de forma que la experiencia del evento sea mas enriquecedora al compartirla con alguien, reducir el estres que genra ir solo a un evento ya 
+A contactarte con personas con las que seas a fin para ir juntos a un evento (concierto, obra de teatro, exposición, ect.) de forma que la experiencia del evento sea mas enriquecedora al compartirla con alguien, reducir el estres que genra ir solo a un evento (desconocer el lugar, sentirte vulnerable, etc.)
 
 •<strong> Características usuarios </strong>
 
@@ -35,7 +35,7 @@ Viven en ciudades grandes
 <img src="/Recursos/InvUsuario/personasEscenariosHistoriausuario.PNG">
 
 
-Las vistas del desarrollo lucen de la siguiente manera:
+Las vistas principales del desarrollo lucen de la siguiente manera:
 
 • <strong>Vista inicio </strong>
 
