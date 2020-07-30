@@ -8,7 +8,7 @@ import '../estilos/sass/_header.sass';
 function Logo (){
     return (
         <div className="bannerHeader">
-        <img src={logo} alt="logogetMate" width="35px" height="32px"/> 
+            <Link to="/" className="Logo"><img src={logo} alt="logogetMate" /></Link> 
             <Link to="/" className="Logo"> get<strong>Mate</strong></Link>
         </div>
     )

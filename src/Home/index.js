@@ -31,7 +31,7 @@ class Home extends React.Component{
                 hora: '9:00 pm',
                 momentodia: 'noche',
                 ubicacion: 'Palacio de los Deportes',
-                categoria:'Concierto',
+                categoria:'Conciertos',
                 modalidad: 'presencial',
                 costo: 1000,
 
@@ -45,7 +45,7 @@ class Home extends React.Component{
                 hora: '7:00 pm',
                 momentodia: 'noche',
                 ubicacion: 'Palacio de los Deportes',
-                categoria:'Concierto',
+                categoria:'Conciertos',
                 modalidad: 'presencial',
                 costo: 1500,
             },
@@ -89,7 +89,74 @@ class Home extends React.Component{
                 costo: 0,
             }
         ], 
+        listadoEventosFiltrados: [
+            {
+                nombre: 'Concierto Marc Anthony',
+                slug: 'concierto-marc-anthony',
+                imagenHome: 'https://firebasestorage.googleapis.com/v0/b/getmate-feb4e.appspot.com/o/eventosMarcanthony.png?alt=media&token=31bd4fdf-c0d6-48e8-a9be-dd75aebdb676',
+                fecha: '28 sep ',
+                dia: 'Viernes, ',
+                hora: '9:00 pm',
+                momentodia: 'noche',
+                ubicacion: 'Palacio de los Deportes',
+                categoria:'Conciertos',
+                modalidad: 'presencial',
+                costo: 1000,
 
+            }, 
+            {
+                nombre: 'The Killers en concierto',
+                slug: 'the-killers-en-concierto',
+                imagenHome: 'https://firebasestorage.googleapis.com/v0/b/getmate-feb4e.appspot.com/o/thekillers.png?alt=media&token=dbe7371e-e10f-4678-951b-af30e3fab5bc',
+                fecha: '14 oct ',
+                dia: 'Sábado, ',
+                hora: '7:00 pm',
+                momentodia: 'noche',
+                ubicacion: 'Palacio de los Deportes',
+                categoria:'Conciertos',
+                modalidad: 'presencial',
+                costo: 1500,
+            },
+            {
+                nombre: 'CRYSTAL - Cirque du soleil',
+                slug: 'crystal-cirque-du-soleil',
+                imagenHome: 'https://firebasestorage.googleapis.com/v0/b/getmate-feb4e.appspot.com/o/crystal.png?alt=media&token=ed3aa2bd-1d54-4b0f-aa2d-d44d44779c3e',
+                fecha: '26 oct ',
+                dia: 'Jueves',
+                hora: '8:00 pm',
+                momentodia: 'noche',
+                ubicacion: 'Palacio de los Deportes',
+                categoria:'Culturales',
+                modalidad: 'presencial',
+                costo: 1200,
+            },
+            {
+                nombre: 'Webinar "Construyendo el futuro" ',
+                slug: 'webinar-construyendo-el-futuro',
+                imagenHome: 'https://firebasestorage.googleapis.com/v0/b/getmate-feb4e.appspot.com/o/jovenesfuturo.png?alt=media&token=d8549b05-6eb4-46ee-b7a3-ba5d80785c1b',
+                fecha: '28 oct ',
+                dia: 'Miércoles, ',
+                hora: '10:00 am',
+                momentodia: 'mañana',
+                ubicacion: 'Auditorio Nacional',
+                categoria:'Profesionales',
+                modalidad: 'presencial',
+                costo: 200,
+            },
+            {
+                nombre: 'Limpiando Chapultepec ',
+                slug: 'limpiando-chapultepec',
+                imagenHome: 'https://firebasestorage.googleapis.com/v0/b/getmate-feb4e.appspot.com/o/bosque.png?alt=media&token=d5eb7adc-8a95-4945-a0c5-3fc54914dca4',
+                fecha: '14 nov ',
+                dia: 'Sábado, ',
+                hora: '02:00 pm',
+                momentodia: 'tarde',
+                ubicacion: 'Bosque de Chapultepec',
+                categoria:'Alternativos',
+                modalidad: 'presencial',
+                costo: 0,
+            }
+        ],
         filtros: [
             {
                alternativos: false, 
@@ -98,7 +165,7 @@ class Home extends React.Component{
                 deportes: false, 
                 profesionales: false,
                 vidaNocturna: false,
-                todos: false,
+                todos: true,
             },
             {
                 mañana: false, 
@@ -120,7 +187,7 @@ class Home extends React.Component{
 
         handleCategories = (selection, checked) => {
             let nuevosfiltros = [...this.state.filtros]
-            console.log(nuevosfiltros)
+
             nuevosfiltros[0] = {
                 ...nuevosfiltros[0],
                 alternativos: false, 
@@ -131,17 +198,40 @@ class Home extends React.Component{
                 vidaNocturna: false,
                 todos: false,
                 [selection]: checked, 
-                }
+            }
+
+           
+
+
+            let eventosfiltrados = this.state.listadoEventos.filter( e => {
+                let categoria = e.categoria.toLowerCase()
+                return categoria === selection
+            })
+
             this.setState({
-                filtros: nuevosfiltros
+                filtros: nuevosfiltros,
+                listadoEventosFiltrados: eventosfiltrados
             })
         }
 
         handleDayMoment = (selection, checked) => {
-            this.setState({
-            [selection]: checked,   
-            })
+            
+            let momentodiafiltros= [...this.state.filtros]
+            console.log('momentodiafiltrosantes:', momentodiafiltros)
+            momentodiafiltros[1]={
+                ...momentodiafiltros[1],
+                [selection]: checked,
+                }
+            console.log('momentodiafiltrosdespues:', momentodiafiltros)
+
+             // 1. Necesitamos hacer una copia de los filtros de dia, tarde, noche
+            // 2. Seleccionar el arreglo y cambiar con [selection]: checked los momentos del día
+            // 3. Filtrar todos los elementos que tengan true. Aquí se tiene que hacer un loop con Object.assign
+            // 4. Todo en el mismo filter, o hacemos dos filters.
         }
+           
+        
+        
 
         handleDay = (selection, checked) => {
             this.setState({
@@ -164,7 +254,6 @@ class Home extends React.Component{
                 }
             });
 
-            let listadoEventosFiltros;
                if(this.state.filtros[0].alternativos===true)
                 {this.state.listadoEventos.filter( (e) => 
                 { return e.categoria === this.state.listadoEventos.alternativos
@@ -177,14 +266,8 @@ class Home extends React.Component{
                 {this.state.listadoEventos.filter( (e) => 
                 { return e.categoria === this.state.listadoEventos.culturales
                 })}  
-            //this.setState({
-               // listadoEventos: listadoEventosFiltros
-           //})
            }
-                   
-           // })
-        //} 
-               
+                
         
 
     render(){
@@ -224,19 +307,19 @@ class Home extends React.Component{
             }
             
               
-                   
-       return (
-        <div className='Body'> 
+        console.log(this.state.filtros[0].todos)
+        return (
+            <div className='Body'> 
                 {this.state.authenticated ? (<ProfileHome/> ): <Login /> }     
                 <div className="contenidoMain">
                     <div className="tituloContenidoMain">
                         <div className='MainTituloContenidoMain'><img  src={imagen ? imagen : this.state.imagen}  alt={titulo ? titulo : this.state.titulo} /><strong>{titulo ? titulo : this.state.titulo} </strong></div> 
                     </div>
                     <div className="boxsContenidoMain">
-                                
-                        {this.state.listadoEventos.map((e)=>{
-                            return( 
-                                        
+                        {
+                        this.state.filtros[0].todos === true ? 
+                        this.state.listadoEventos.map((e)=>{
+                            return(     
                                  <div className="eventoBoxsContenidoMain">
                                     <div><Link to= {`/evento/${e.slug}`}> <img src={e.imagenHome} alt={e.nombre}/>  </Link></div>
                                     <div >
@@ -246,7 +329,24 @@ class Home extends React.Component{
                                     </div>
                                 </div>
                                 )}
-                            )}
+                            )
+                            :
+                            this.state.listadoEventosFiltrados.map((e)=>{
+                                return( 
+                                            
+                                     <div className="eventoBoxsContenidoMain">
+                                        <div><Link to= {`/evento/${e.slug}`}> <img src={e.imagenHome} alt={e.nombre}/>  </Link></div>
+                                        <div >
+                                            <h2><strong> {e.nombre} </strong> </h2>
+                                            <h4>{e.dia} {e.fecha}{e.hora}  <br/> 
+                                            {e.ubicacion}  </h4>
+                                        </div>
+                                    </div>
+                                    )}
+                                )
+                        }
+                        
+
                             
                     </div>
                 </div>  

@@ -1,6 +1,6 @@
 .Body
     display: grid
-    grid-template: repeat(1, 98%) / repeat(3, 22.5% 53% 17.5%) 
+    grid-template: repeat(1, 100%) / repeat(3, 22.5% 53% 17.5%) 
     grid-gap: 2.4%
     height: auto
     background-color: #F2F2F2
@@ -11,9 +11,12 @@
         grid-template: repeat(1, 100%) / repeat(3, 20% 58.4% 20% )
         grid-gap: 0.8%    
 
-    
-    
-       
+
+@media only screen and (max-width: 500px)
+    .Body
+        grid-template: repeat(1, 50%) / repeat(1, 98%) 
+
+        
 
    
     
